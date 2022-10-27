@@ -19,7 +19,7 @@ function Sidebar(props) {
     return (
         width > 768 ? (
                     <>
-            <div className="sidebar" style={{height: height * 0.9, width: width * 0.15}}>
+            <div className="sidebar" style={{height: height * 0.9, width: width * 0.25}}>
                 <Container fluid>
                     <div className="header" style={{height: height * 0.2}}>
                         <Container fluid>

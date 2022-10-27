@@ -2,6 +2,7 @@ import './App.css';
 import Sidebar from "./components/Sidebar";
 import {useEffect, useState} from "react";
 import {Col, Row} from "react-bootstrap";
+import Home from "./components/Home";
 
 function App() {
     let [height, setHeight] = useState(window.innerHeight);
@@ -23,7 +24,7 @@ function App() {
                     </Col>
                     <Col>
                         <div className="content" style={{height: height * 0.9, width: width * 0.75}}>
-
+                            <Home height={height * 0.9} width={width}/>
                         </div>
                     </Col>
                 </Row>
@@ -31,7 +32,7 @@ function App() {
                 <>
                     <Sidebar height={height} width={width}/>
                     <div className="content" style={{height: height * 0.9, width: width}}>
-
+                        <Home height={height * 0.9} width={width}/>
                     </div>
                 </>
             )}
