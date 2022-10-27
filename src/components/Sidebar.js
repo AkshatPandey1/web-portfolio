@@ -1,5 +1,5 @@
 import "../styles/Sidebar.css";
-import {Col, Container, Nav, Row} from "react-bootstrap";
+import {Col, Container, Nav, Navbar, Row} from "react-bootstrap";
 import {useEffect, useState} from "react";
 import {
     Envelope,
@@ -12,19 +12,13 @@ import {
     Mailbox2
 } from "react-bootstrap-icons";
 
-function Sidebar() {
-    let [height, setHeight] = useState(window.innerHeight);
-    let [width, setWidth] = useState(window.innerWidth);
-
-    useEffect(() => {
-        window.addEventListener('resize', () => {
-            setHeight(window.innerHeight);
-            setWidth(window.innerWidth);
-        });
-    })
+function Sidebar(props) {
+    let height = props.height;
+    let width = props.width;
 
     return (
-        <>
+        width > 768 ? (
+                    <>
             <div className="sidebar" style={{height: height * 0.9, width: width * 0.15}}>
                 <Container fluid>
                     <div className="header" style={{height: height * 0.2}}>
@@ -34,7 +28,7 @@ function Sidebar() {
                                     <img src="/favicon.png" alt="placeholder"/>
                                 </a>
                             </Row>
-      
+
                         </Container>
                     </div>
                     <div className="body" style={{height: height * 0.6}}>
@@ -77,6 +71,26 @@ function Sidebar() {
                 </Container>
             </div>
         </>
+        ) : (
+            <>
+                <div className="collapsable-navbar">
+                    <Navbar bg="transparent" variant="dark" expand="lg">
+                        <Navbar.Brand href="/">
+                            <img src="/favicon.png" alt="placeholder"/>
+                        </Navbar.Brand>
+                        <Navbar.Toggle aria-controls="basic-navbar-nav"/>
+                        <Navbar.Collapse id="basic-navbar-nav">
+                            <Nav className="items">
+                                <Nav.Link className="item" href="#about">About</Nav.Link>
+                                <Nav.Link className="item" href="#experience">Experience</Nav.Link>
+                                <Nav.Link className="item" href="#projects">Projects</Nav.Link>
+                                <Nav.Link className="item" href="#contact">Contact</Nav.Link>
+                            </Nav>
+                        </Navbar.Collapse>
+                    </Navbar>
+                </div>
+            </>
+        )
     )
 }
 

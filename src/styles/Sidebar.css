@@ -3,7 +3,7 @@
     text-align: center;
     display: table-cell;
     border-right: white 1px dotted;
-    background-color: #362222;
+    background-color: rgba(54, 34, 34, 0.5);
 }
 
 .sidebar .header {
@@ -76,5 +76,20 @@
 
 .navbar-nav .nav-link.active:hover, .navbar-nav .show > .nav-link:hover, .nav-link:hover {
     color: white;
+}
+
+.collapsable-navbar {
+    margin: 10px 5% 10px;
+}
+
+.collapsable-navbar .items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.collapsable-navbar img {
+    width: 50px;
+    height: 50px;
 }
 
