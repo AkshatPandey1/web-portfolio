@@ -1,0 +1,80 @@
+.sidebar {
+    flex-direction: column;
+    text-align: center;
+    display: table-cell;
+    border-right: white 1px dotted;
+    background-color: #362222;
+}
+
+.sidebar .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidebar img {
+    width: 100px;
+    height: 100px;
+}
+
+.sidebar .body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4em;
+}
+
+.sidebar .body .nav {
+    border-top: white 1px dotted;
+    border-bottom: white 1px dotted;
+    background-color: #362222;
+    -webkit-transition: background-color 0.5s;
+    -moz-transition: background-color 0.5s;
+    -ms-transition: background-color 0.5s;
+    -o-transition: background-color 0.5s;
+    transition: background-color 0.5s;
+}
+
+.sidebar .body .nav:hover {
+    background-color: #513333;
+}
+
+.sidebar .footer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 0 0 20% 0;
+}
+
+.footer .icon {
+    color: white;
+    -webkit-transition: color 0.5s;
+    -moz-transition: color 0.5s;
+    -ms-transition: color 0.5s;
+    -o-transition: color 0.5s;
+    transition: color 0.5s;
+}
+
+.footer .icon:hover {
+    cursor: pointer;
+    color: #0086f3;
+}
+
+
+.navbar-brand {
+    color: white;
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .show > .nav-link, .nav-link {
+    color: rgba(255, 255, 255, 0.5);
+    -webkit-transition: color 0.5s;
+    -moz-transition: color 0.5s;
+    -ms-transition: color 0.5s;
+    -o-transition: color 0.5s;
+    transition: color 0.5s;
+}
+
+.navbar-nav .nav-link.active:hover, .navbar-nav .show > .nav-link:hover, .nav-link:hover {
+    color: white;
+}
+
