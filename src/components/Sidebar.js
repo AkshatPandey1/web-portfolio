@@ -16,7 +16,7 @@ function Sidebar(props) {
                                 <Row>
                                     <div className="logo animate__animated animate__bounce">
                                         <a href="/">
-                                            <img className="" src="/favicon.png" alt="placeholder"/>
+                                            <img className="" src="https://imgur.com/BKqZdzJ" alt="placeholder"/>
                                         </a>
                                     </div>
                                 </Row>
@@ -68,7 +68,7 @@ function Sidebar(props) {
                 <div className="collapsable-navbar">
                     <Navbar bg="transparent" variant="dark" expand="xs">
                         <Navbar.Brand href="/">
-                            <img src="/favicon.png" alt="placeholder"/>
+                            <img src="https://i.imgur.com/BKqZdzJ.png" alt="placeholder"/>
                         </Navbar.Brand>
                         <Navbar.Toggle aria-controls="basic-navbar-nav"/>
                         <Navbar.Collapse id="basic-navbar-nav">
