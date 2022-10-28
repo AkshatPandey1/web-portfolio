@@ -16,7 +16,7 @@ function Sidebar(props) {
                                 <Row>
                                     <div className="logo animate__animated animate__bounce">
                                         <a href="/">
-                                            <img className="" src="https://imgur.com/BKqZdzJ" alt="placeholder"/>
+                                            <img className="" src="https://i.imgur.com/BKqZdzJ.png" alt="placeholder"/>
                                         </a>
                                     </div>
                                 </Row>
