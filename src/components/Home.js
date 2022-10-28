@@ -3,11 +3,11 @@ import {Button, Col, Container, Row} from "react-bootstrap";
 
 function Home(props) {
     console.log(props);
-    return (<div className="home" style={{height: "100vh"}}>
+    return (<div className="home" style={{height: props.height}}>
         <Container fluid>
             <Row xs={1} lg={3}>
                 <Col lg={8}>
-                    <div className="greeting" style={{height: props.height * 0.9}}>
+                    <div className="greeting" style={{height: props.height}}>
                         <Container fluid>
                             <Row>
                                 <h3>Hey there! I am</h3>

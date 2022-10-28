@@ -33,7 +33,7 @@ function App() {
                 <>
                     <Sidebar height={height} width={width}/>
                     <div className="content" style={{height: height * 0.9, width: width}}>
-                        <Home height={height * 0.9} width={width}/>
+                        <Home height={height * 0.8} width={width}/>
                     </div>
                 </>
             )}
