@@ -1,5 +1,6 @@
 import './App.css';
 import Sidebar from "./components/Sidebar";
+import 'animate.css';
 import {useEffect, useState} from "react";
 import {Col, Row} from "react-bootstrap";
 import Home from "./components/Home";
@@ -17,13 +18,13 @@ function App() {
 
     return (
         <div className="App">
-            {width > 768 ? (
+            {width > 1100 ? (
                 <Row>
                     <Col>
                         <Sidebar height={height} width={width}/>
                     </Col>
                     <Col>
-                        <div className="content" style={{height: height * 0.9, width: width * 0.75}}>
+                        <div className="content" style={{height: height * 0.9, width: width * 0.85}}>
                             <Home height={height * 0.9} width={width}/>
                         </div>
                     </Col>

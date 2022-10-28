@@ -1,19 +1,52 @@
 h2 {
     font-size: 32px;
-    margin-left: 300px;
 }
 
 h1 {
-    padding-top: 20px;
-    padding-bottom: 25px;
-    margin-left: 100px;
     font-size: 72px;
     font-weight: bold;
 }
 
-.home .greeting {
+.greeting {
     display: flex;
     justify-content: center;
-    flex-direction: column;
+    align-items: center;
+    height: 100%;
 }
 
+.greeting .container-fluid {
+    animation: bounceInRight;
+    animation-duration: 2s;
+}
+
+.resume {
+    margin-top: 5%;
+    animation: swing;
+    animation-delay: 2s;
+    animation-duration: 2s;
+}
+
+.resume button {
+    background-color: #0028f3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    -webkit-transition: background-color 0.5s;
+    -moz-transition: background-color 0.5s;
+    -ms-transition: background-color 0.5s;
+    -o-transition: background-color 0.5s;
+    transition: background-color 0.5s;
+}
+
+/* There is a marquee class and then a marquee--inner class inside of it. */
+/* The marquee class is used to position the marquee. */
+/* The marquee--inner class is used to animate the marquee vertically */
+/* Loop the animation to make it look like the marquee is infinite */
+
+.languages {
+    height: 98vh;
+    margin-top: 5%;
+    overflow: hidden;
+}

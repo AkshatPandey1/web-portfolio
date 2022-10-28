@@ -1,4 +1,6 @@
 .sidebar {
+    animation: fadeInLeft;
+    animation-duration: 2s;
     flex-direction: column;
     text-align: center;
     display: table-cell;
@@ -12,7 +14,7 @@
     align-items: center;
 }
 
-.sidebar img {
+img {
     width: 100px;
     height: 100px;
 }
@@ -21,13 +23,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.4em;
+    font-size: 1.2em;
 }
 
 .sidebar .body .nav {
-    border-top: white 1px dotted;
     border-bottom: white 1px dotted;
-    background-color: #362222;
     -webkit-transition: background-color 0.5s;
     -moz-transition: background-color 0.5s;
     -ms-transition: background-color 0.5s;
@@ -48,16 +48,14 @@
 
 .footer .icon {
     color: white;
+    animation: rubberBand;
+    animation-duration: 2s;
+    animation-delay: 2s;
     -webkit-transition: color 0.5s;
     -moz-transition: color 0.5s;
     -ms-transition: color 0.5s;
     -o-transition: color 0.5s;
     transition: color 0.5s;
-}
-
-.footer .icon:hover {
-    cursor: pointer;
-    color: #0086f3;
 }
 
 
@@ -78,8 +76,17 @@
     color: white;
 }
 
+.collapsable-navbar .footer {
+    padding: 10% 0 0;
+}
+
+.collapsable-navbar .footer .col {
+    display: flex;
+    justify-content: center;
+}
+
 .collapsable-navbar {
-    margin: 10px 5% 10px;
+    margin: 10px 5%;
 }
 
 .collapsable-navbar .items {
@@ -88,8 +95,10 @@
     align-items: center;
 }
 
-.collapsable-navbar img {
+.collapsable-navbar .icon {
     width: 50px;
     height: 50px;
+    animation: rubberBand;
+    animation-duration: 2s;
+    animation-delay: 2s;
 }
-
