@@ -1,4 +1,5 @@
 body {
-    background: #171010;
+    /* Linear gradient from black to green */
+    background: linear-gradient(90deg, #000000 0%, #396b42 50%, #5bc352 100%);
     overflow-x: hidden;
 }

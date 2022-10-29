@@ -27,8 +27,9 @@ h1 {
 }
 
 .resume button {
-    background-color: #0028f3;
+    background-color: darkmagenta;
     color: white;
+    font-weight: bolder;
     border: none;
     border-radius: 5px;
     padding: 10px 20px;

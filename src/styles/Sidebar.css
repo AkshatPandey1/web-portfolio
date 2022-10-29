@@ -5,7 +5,7 @@
     text-align: center;
     display: table-cell;
     border-right: white 1px dotted;
-    background-color: rgba(54, 34, 34, 0.5);
+    background-color: transparent;
 }
 
 .sidebar .header {
@@ -27,7 +27,7 @@ img {
 }
 
 .sidebar .body .nav {
-    border-bottom: white 1px dotted;
+    border-bottom: white 1px dashed;
     -webkit-transition: background-color 0.5s;
     -moz-transition: background-color 0.5s;
     -ms-transition: background-color 0.5s;
@@ -36,7 +36,7 @@ img {
 }
 
 .sidebar .body .nav:hover {
-    background-color: #513333;
+    background-color: #6a6964;
 }
 
 .sidebar .footer {
@@ -56,6 +56,10 @@ img {
     -ms-transition: color 0.5s;
     -o-transition: color 0.5s;
     transition: color 0.5s;
+}
+
+.footer .icon:hover {
+    color: #fca311;
 }
 
 
@@ -101,4 +105,8 @@ img {
     animation: rubberBand;
     animation-duration: 2s;
     animation-delay: 2s;
+}
+
+.collapsable-navbar .icon:hover {
+    color: #fca311;
 }

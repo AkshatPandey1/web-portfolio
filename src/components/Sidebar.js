@@ -15,7 +15,7 @@ function Sidebar(props) {
                             <Container fluid>
                                 <Row>
                                     <div className="logo animate__animated animate__bounce">
-                                        <a href="/">
+                                        <a href={window.location.href}>
                                             <img className="" src="https://i.imgur.com/BKqZdzJ.png" alt="placeholder"/>
                                         </a>
                                     </div>
