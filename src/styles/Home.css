@@ -40,14 +40,60 @@ h1 {
     -o-transition: background-color 0.5s;
     transition: background-color 0.5s;
 }
-
-/* There is a marquee class and then a marquee--inner class inside of it. */
-/* The marquee class is used to position the marquee. */
-/* The marquee--inner class is used to animate the marquee vertically */
-/* Loop the animation to make it look like the marquee is infinite */
-
 .languages {
     height: 98vh;
     margin-top: 5%;
-    overflow: hidden;
+}
+
+.languages .container-fluid {
+    height: 98vh;
+    animation: fadeIn;
+    animation-duration: 2s;
+    overflow-y: hidden;
+}
+
+.languages .container-fluid .row {
+    height: 25vh;
+    display: grid;
+    position: relative;
+    place-items: center;
+}
+
+.languages .container-fluid .row img {
+    transform: scale(1);
+    width: 150px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: fadeIn;
+    animation-duration: 2s;
+}
+
+.technologies {
+    height: 98vh;
+    margin-top: 5%;
+}
+
+.technologies .container-fluid {
+    height: 98vh;
+    animation: fadeIn;
+    animation-duration: 2s;
+    overflow-y: hidden;
+}
+
+.technologies .container-fluid .row {
+    height: 25vh;
+    display: grid;
+    position: relative;
+    place-items: center;
+}
+
+.technologies .container-fluid .row img {
+    transform: scale(0.6);
+    width: 150px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: fadeIn;
+    animation-duration: 2s;
 }

@@ -1,8 +1,49 @@
 import '../styles/Home.css';
 import {Button, Col, Container, Row} from "react-bootstrap";
+import {useEffect} from "react";
 
 function Home(props) {
-    console.log(props);
+    useEffect(() => {
+        let languages = document.querySelector(".languages .container-fluid");
+        let interval = setInterval(() => {
+            if (languages) {
+                clearInterval(interval);
+            } else {
+                languages = document.querySelector(".languages .container-fluid");
+            }
+        }, 500);
+
+        setInterval(() => {
+            if (languages) {
+                languages.scrollTop += 1;
+                // Set the scroll top to the position of the 4th last child
+                let languages_4th_last_child = languages.children[languages.children.length - 4];
+                if (languages.scrollTop >= languages_4th_last_child.offsetTop) {
+                    languages.scrollTop = languages.children[0].offsetTop;
+                }
+            }
+        }, 30);
+
+        let technologies = document.querySelector(".technologies .container-fluid");
+        let interval2 = setInterval(() => {
+            if (technologies) {
+                clearInterval(interval2);
+            } else {
+                technologies = document.querySelector(".technologies .container-fluid");
+            }
+        }, 500);
+
+        setInterval(() => {
+            if (technologies) {
+                technologies.scrollTop -= 1;
+                // Set the scroll top to position of the 1st child
+                if (technologies.scrollTop <= technologies.children[0].offsetTop) {
+                    technologies.scrollTop = technologies.children[technologies.children.length - 4].offsetTop;
+                }
+            }
+        }, 15);
+    }, []);
+
     return (<div className="home" style={{height: props.height}}>
         <Container fluid>
             <Row xs={1} lg={3}>
@@ -27,18 +68,95 @@ function Home(props) {
                     </div>
 
                 </Col>
-                <Col lg={2}>
+                {props.width > 1100 ? (
+                    <Col lg={1}>
                     <div className="languages">
-                        <div className="container blur">
-                            <ul className="slider">
-
-
-                            </ul>
-                        </div>
+                        <Container fluid style={{
+                            scrollbarWidth: "none",
+                            overflowY: "scroll",
+                            overflowX: "hidden",
+                        }}>
+                            <Row>
+                                <img alt="python-logo-transparent"
+                                     src="https://assets.stickpng.com/images/5848152fcef1014c0b5e4967.png"/>
+                            </Row>
+                            <Row>
+                                <img alt="java-logo-transparent"
+                                     src="https://seeklogo.com/images/J/java-logo-7833D1D21A-seeklogo.com.png"/>
+                            </Row>
+                            <Row>
+                                <img alt="c-logo-transparent"
+                                     src="https://upload.wikimedia.org/wikipedia/commons/1/19/C_Logo.png"/>
+                            </Row>
+                            <Row>
+                                <img alt="c++-logo-transparent" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1200px-ISO_C%2B%2B_Logo.svg.png"/>
+                            </Row>
+                            <Row>
+                                <img alt="c#-logo-transparent" src="https://w.namu.la/s/a5c8b52bd00f38f3430dd7540867240527fd91e023abc9ff5afc7612faaf0ff3d089ebc7d17fd742323e15a32383753a3777de02ec664a6e15b0e92847220dc4466667b46a623ebee2d32b4f51c213f8ce0b76bcf50e3d54ec6debf13eacb15a"/>
+                            </Row>
+                            <Row>
+                                <img alt="javascript-logo-transparent" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png"/>
+                            </Row>
+                            <Row>
+                                <img alt="html-logo-transparent" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1200px-HTML5_logo_and_wordmark.svg.png"/>
+                            </Row>
+                            <Row>
+                                <img alt="python-logo-transparent"
+                                     src="https://assets.stickpng.com/images/5848152fcef1014c0b5e4967.png"/>
+                            </Row>
+                            <Row>
+                                <img alt="java-logo-transparent"
+                                     src="https://seeklogo.com/images/J/java-logo-7833D1D21A-seeklogo.com.png"/>
+                            </Row>
+                            <Row>
+                                <img alt="c-logo-transparent"
+                                     src="https://upload.wikimedia.org/wikipedia/commons/1/19/C_Logo.png"/>
+                            </Row>
+                            <Row>
+                                <img alt="c++-logo-transparent" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1200px-ISO_C%2B%2B_Logo.svg.png"/>
+                            </Row>
+                        </Container>
                     </div>
                 </Col>
+                ) : null}
                 <Col lg={2}>
                     <div className="technologies">
+                        <Container fluid style={{
+                            scrollbarWidth: "none",
+                            overflowY: "scroll",
+                            overflowX: "hidden",
+                        }}>
+                            <Row>
+                                <img alt="react-logo-transparent" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png"/>
+                            </Row>
+                            <Row>
+                                <img alt="django-logo-transparent" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Django_logo.svg/1200px-Django_logo.svg.png"/>
+                            </Row>
+                            <Row>
+                                <img alt="flask-logo-transparent" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Flask_logo.svg/1200px-Flask_logo.svg.png"/>
+                            </Row>
+                            <Row>
+                                <img alt="bootstrap-logo-transparent" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/1200px-Bootstrap_logo.svg.png"/>
+                            </Row>
+                            <Row>
+                                <img alt="git-logo-transparent" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Git-logo.svg/1200px-Git-logo.svg.png"/>
+                            </Row>
+                            <Row>
+                                <img alt="github-logo-transparent" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/1200px-Octicons-mark-github.svg.png"/>
+                            </Row>
+                            <Row>
+                                <img alt="react-logo-transparent" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png"/>
+                            </Row>
+                            <Row>
+                                <img alt="django-logo-transparent" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Django_logo.svg/1200px-Django_logo.svg.png"/>
+                            </Row>
+                            <Row>
+                                <img alt="flask-logo-transparent" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Flask_logo.svg/1200px-Flask_logo.svg.png"/>
+                            </Row>
+                            <Row>
+                                <img alt="bootstrap-logo-transparent" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/1200px-Bootstrap_logo.svg.png"/>
+                            </Row>
+                        </Container>
                     </div>
                 </Col>
             </Row>
