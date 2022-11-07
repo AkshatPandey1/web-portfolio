@@ -41,13 +41,13 @@ function Home(props) {
                     technologies.scrollTop = technologies.children[technologies.children.length - 4].offsetTop;
                 }
             }
-        }, 15);
+        }, 30);
     }, []);
 
     return (<div className="home" style={{height: props.height}}>
         <Container fluid>
             <Row xs={1} lg={3}>
-                <Col lg={8}>
+                <Col lg={7}>
                     <div className="greeting" style={{height: props.height}}>
                         <Container fluid>
                             <Row>
@@ -68,17 +68,14 @@ function Home(props) {
                     </div>
 
                 </Col>
-                {props.width > 1100 ? (
-                    <Col lg={1}>
+                {props.width > 1100 ? (<Col lg={2}>
                     <div className="languages">
                         <Container fluid style={{
-                            scrollbarWidth: "none",
-                            overflowY: "scroll",
-                            overflowX: "hidden",
+                            scrollbarWidth: "none", overflowY: "scroll", overflowX: "hidden",
                         }}>
                             <Row>
                                 <img alt="python-logo-transparent"
-                                     src="https://assets.stickpng.com/images/5848152fcef1014c0b5e4967.png"/>
+                                     src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/768px-Python-logo-notext.svg.png"/>
                             </Row>
                             <Row>
                                 <img alt="java-logo-transparent"
@@ -89,20 +86,28 @@ function Home(props) {
                                      src="https://upload.wikimedia.org/wikipedia/commons/1/19/C_Logo.png"/>
                             </Row>
                             <Row>
-                                <img alt="c++-logo-transparent" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1200px-ISO_C%2B%2B_Logo.svg.png"/>
+                                <img alt="c++-logo-transparent"
+                                     src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1200px-ISO_C%2B%2B_Logo.svg.png"/>
                             </Row>
                             <Row>
-                                <img alt="c#-logo-transparent" src="https://w.namu.la/s/a5c8b52bd00f38f3430dd7540867240527fd91e023abc9ff5afc7612faaf0ff3d089ebc7d17fd742323e15a32383753a3777de02ec664a6e15b0e92847220dc4466667b46a623ebee2d32b4f51c213f8ce0b76bcf50e3d54ec6debf13eacb15a"/>
+                                <img alt="c#-logo-transparent"
+                                     src="https://w.namu.la/s/a5c8b52bd00f38f3430dd7540867240527fd91e023abc9ff5afc7612faaf0ff3d089ebc7d17fd742323e15a32383753a3777de02ec664a6e15b0e92847220dc4466667b46a623ebee2d32b4f51c213f8ce0b76bcf50e3d54ec6debf13eacb15a"/>
                             </Row>
                             <Row>
-                                <img alt="javascript-logo-transparent" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png"/>
+                                <img alt="javascript-logo-transparent"
+                                     src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png"/>
                             </Row>
                             <Row>
-                                <img alt="html-logo-transparent" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1200px-HTML5_logo_and_wordmark.svg.png"/>
+                                <img alt="nodejs-logo-transparent"
+                                     src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1200px-Node.js_logo.svg.png"/>
+                            </Row>
+                            <Row>
+                                <img alt="html-logo-transparent"
+                                     src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1200px-HTML5_logo_and_wordmark.svg.png"/>
                             </Row>
                             <Row>
                                 <img alt="python-logo-transparent"
-                                     src="https://assets.stickpng.com/images/5848152fcef1014c0b5e4967.png"/>
+                                     src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/768px-Python-logo-notext.svg.png"/>
                             </Row>
                             <Row>
                                 <img alt="java-logo-transparent"
@@ -113,52 +118,88 @@ function Home(props) {
                                      src="https://upload.wikimedia.org/wikipedia/commons/1/19/C_Logo.png"/>
                             </Row>
                             <Row>
-                                <img alt="c++-logo-transparent" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1200px-ISO_C%2B%2B_Logo.svg.png"/>
+                                <img alt="c++-logo-transparent"
+                                     src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1200px-ISO_C%2B%2B_Logo.svg.png"/>
                             </Row>
                         </Container>
                     </div>
-                </Col>
-                ) : null}
-                <Col lg={2}>
+                </Col>) : null}
+                {props.width > 1100 ? (<Col lg={2}>
                     <div className="technologies">
                         <Container fluid style={{
-                            scrollbarWidth: "none",
-                            overflowY: "scroll",
-                            overflowX: "hidden",
+                            scrollbarWidth: "none", overflowY: "scroll", overflowX: "hidden",
                         }}>
                             <Row>
-                                <img alt="react-logo-transparent" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png"/>
+                                <img alt="react-logo-transparent"
+                                     src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png"/>
                             </Row>
                             <Row>
-                                <img alt="django-logo-transparent" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Django_logo.svg/1200px-Django_logo.svg.png"/>
+                                <img alt="django-logo-transparent"
+                                     src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Django_logo.svg/1200px-Django_logo.svg.png"/>
                             </Row>
                             <Row>
-                                <img alt="flask-logo-transparent" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Flask_logo.svg/1200px-Flask_logo.svg.png"/>
+                                <img alt="flask-logo-transparent"
+                                     src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Flask_logo.svg/1200px-Flask_logo.svg.png"/>
                             </Row>
                             <Row>
-                                <img alt="bootstrap-logo-transparent" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/1200px-Bootstrap_logo.svg.png"/>
+                                <img alt="bootstrap-logo-transparent"
+                                     src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/1200px-Bootstrap_logo.svg.png"/>
                             </Row>
                             <Row>
-                                <img alt="git-logo-transparent" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Git-logo.svg/1200px-Git-logo.svg.png"/>
+                                <img alt="git-logo-transparent"
+                                     src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Git-logo.svg/1200px-Git-logo.svg.png"/>
                             </Row>
                             <Row>
-                                <img alt="github-logo-transparent" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/1200px-Octicons-mark-github.svg.png"/>
+                                <img alt="github-logo-transparent"
+                                     src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/1200px-Octicons-mark-github.svg.png"/>
                             </Row>
                             <Row>
-                                <img alt="react-logo-transparent" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png"/>
+                                <img alt="threejs-logo-transparent"
+                                     src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Three.js_Icon.svg/330px-Three.js_Icon.svg.png"/>
                             </Row>
                             <Row>
-                                <img alt="django-logo-transparent" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Django_logo.svg/1200px-Django_logo.svg.png"/>
+                                <img alt="expressjs-logo-transparent-black"
+                                     src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Expressjs.png/1200px-Expressjs.png"/>
                             </Row>
                             <Row>
-                                <img alt="flask-logo-transparent" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Flask_logo.svg/1200px-Flask_logo.svg.png"/>
+                                <img alt="sqlite-logo-transparent"
+                                     src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Sqlite-square-icon.svg/1200px-Sqlite-square-icon.svg.png"/>
                             </Row>
                             <Row>
-                                <img alt="bootstrap-logo-transparent" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/1200px-Bootstrap_logo.svg.png"/>
+                                <img alt="firebase-logo-transparent"
+                                     src="https://assets.stickpng.com/thumbs/5847f40ecef1014c0b5e488a.png"/>
+                            </Row>
+                            <Row>
+                                <img alt="mongodb-logo-transparent"
+                                     src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/MongoDB_Logo.svg/1200px-MongoDB_Logo.svg.png"/>
+                            </Row>
+                            <Row>
+                                <img alt="android-studio-logo-transparent"
+                                     src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Android_Studio_Icon_3.6.svg/1900px-Android_Studio_Icon_3.6.svg.png"/>
+                            </Row>
+                            <Row>
+                                <img alt="Pycharm-logo-transparent"
+                                     src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/PyCharm_Icon.svg/1200px-PyCharm_Icon.svg.png"/>
+                            </Row>
+                            <Row>
+                                <img alt="react-logo-transparent"
+                                     src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png"/>
+                            </Row>
+                            <Row>
+                                <img alt="django-logo-transparent"
+                                     src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Django_logo.svg/1200px-Django_logo.svg.png"/>
+                            </Row>
+                            <Row>
+                                <img alt="flask-logo-transparent"
+                                     src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Flask_logo.svg/1200px-Flask_logo.svg.png"/>
+                            </Row>
+                            <Row>
+                                <img alt="bootstrap-logo-transparent"
+                                     src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/1200px-Bootstrap_logo.svg.png"/>
                             </Row>
                         </Container>
                     </div>
-                </Col>
+                </Col>) : null}
             </Row>
         </Container>
     </div>);
