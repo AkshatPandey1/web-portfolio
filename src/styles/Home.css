@@ -40,6 +40,7 @@ h1 {
     -o-transition: background-color 0.5s;
     transition: background-color 0.5s;
 }
+
 .languages {
     height: 98vh;
     margin-top: 5%;
@@ -96,4 +97,10 @@ h1 {
     position: absolute;
     animation: fadeIn;
     animation-duration: 2s;
+}
+
+.technologies .container-fluid::-webkit-scrollbar, .languages .container-fluid::-webkit-scrollbar {
+    display: none;
+    overflow: hidden;
+    -ms-overflow-style: none;
 }
