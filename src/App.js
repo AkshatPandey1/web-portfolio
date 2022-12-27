@@ -4,6 +4,7 @@ import 'animate.css';
 import {useEffect, useState} from "react";
 import {Col, Row} from "react-bootstrap";
 import Home from "./components/Home";
+import About from "./components/About";
 
 function App() {
     let [height, setHeight] = useState(window.innerHeight);
@@ -24,16 +25,17 @@ function App() {
                         <Sidebar height={height} width={width}/>
                     </Col>
                     <Col>
-                        <div className="content" style={{height: height * 0.9, width: width * 0.85}}>
-                            <Home height={height * 0.9} width={width}/>
+                        <div className="content" style={{height: height, width: width * 0.85}}>
+                            <Home height={height} width={width}/>
+                            <About height={height} width={width}/>
                         </div>
                     </Col>
                 </Row>
             ) : (
                 <>
                     <Sidebar height={height} width={width}/>
-                    <div className="content" style={{height: height * 0.9, width: width}}>
-                        <Home height={height * 0.8} width={width}/>
+                    <div className="content" style={{height: height, width: width}}>
+                        <Home height={height * 0.9} width={width}/>
                     </div>
                 </>
             )}

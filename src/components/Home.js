@@ -61,7 +61,9 @@ function Home(props) {
                             </Row>
                             <Row>
                                 <div className="resume">
-                                    <Button variant="outline-success">Resume</Button>
+                                    <Button
+                                      href="https://drive.google.com/file/d/10F_ZVe3FHzUSRf5msKWDT0Ke3wNmFyep/preview"
+                                      variant="success">Resume</Button>
                                 </div>
                             </Row>
                         </Container>
@@ -91,7 +93,7 @@ function Home(props) {
                             </Row>
                             <Row>
                                 <img alt="c#-logo-transparent"
-                                     src="https://w.namu.la/s/a5c8b52bd00f38f3430dd7540867240527fd91e023abc9ff5afc7612faaf0ff3d089ebc7d17fd742323e15a32383753a3777de02ec664a6e15b0e92847220dc4466667b46a623ebee2d32b4f51c213f8ce0b76bcf50e3d54ec6debf13eacb15a"/>
+                                     src="https://seeklogo.com/images/C/c-sharp-c-logo-02F17714BA-seeklogo.com.png"/>
                             </Row>
                             <Row>
                                 <img alt="javascript-logo-transparent"
@@ -159,7 +161,7 @@ function Home(props) {
                             </Row>
                             <Row>
                                 <img alt="expressjs-logo-transparent-black"
-                                     src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Expressjs.png/1200px-Expressjs.png"/>
+                                     src="https://upload.wikimedia.org/wikipedia/commons/6/64/Expressjs.png"/>
                             </Row>
                             <Row>
                                 <img alt="sqlite-logo-transparent"
@@ -167,11 +169,11 @@ function Home(props) {
                             </Row>
                             <Row>
                                 <img alt="firebase-logo-transparent"
-                                     src="https://assets.stickpng.com/thumbs/5847f40ecef1014c0b5e488a.png"/>
+                                     src="https://firebase.google.com/static/downloads/brand-guidelines/PNG/logo-vertical.png"/>
                             </Row>
                             <Row>
                                 <img alt="mongodb-logo-transparent"
-                                     src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/MongoDB_Logo.svg/1200px-MongoDB_Logo.svg.png"/>
+                                     src="https://assets.stickpng.com/thumbs/58481021cef1014c0b5e494b.png"/>
                             </Row>
                             <Row>
                                 <img alt="android-studio-logo-transparent"
