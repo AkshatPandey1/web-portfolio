@@ -63,7 +63,9 @@ function Home(props) {
                                 <div className="resume">
                                     <Button
                                       href="https://drive.google.com/file/d/10F_ZVe3FHzUSRf5msKWDT0Ke3wNmFyep/preview"
-                                      variant="success">Resume</Button>
+                                      variant="outline-success"
+                                      
+                                    >Resume</Button>
                                 </div>
                             </Row>
                         </Container>

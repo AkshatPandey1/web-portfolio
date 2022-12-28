@@ -28,17 +28,13 @@ h1 {
 
 .resume button {
     background-color: #008a8a;
-    color: white;
-    font-weight: bolder;
+    color: black;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
     border: none;
     border-radius: 5px;
     padding: 10px 20px;
     font-size: 1.2em;
-    -webkit-transition: background-color 0.5s;
-    -moz-transition: background-color 0.5s;
-    -ms-transition: background-color 0.5s;
-    -o-transition: background-color 0.5s;
-    transition: background-color 0.5s;
 }
 
 .languages {

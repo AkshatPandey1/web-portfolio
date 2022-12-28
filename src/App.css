@@ -6,3 +6,8 @@
 .content {
     overflow-y: scroll;
 }
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.content::-webkit-scrollbar {
+    display: none;
+}
