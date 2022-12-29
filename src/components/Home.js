@@ -175,7 +175,7 @@ function Home(props) {
                             </Row>
                             <Row>
                                 <img alt="mongodb-logo-transparent"
-                                     src="https://assets.stickpng.com/thumbs/58481021cef1014c0b5e494b.png"/>
+                                     src="https://companieslogo.com/img/orig/MDB_BIG-ad812c6c.png?t=1648915248"/>
                             </Row>
                             <Row>
                                 <img alt="android-studio-logo-transparent"

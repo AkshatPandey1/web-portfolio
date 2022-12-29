@@ -1,16 +1,16 @@
-.about {
+.experience {
     display: table;
     height: 100%; /* specify a height for the element */
     width: 100%; /* specify a width for the element */
     padding: 20px;
 }
 
-.about-inner {
+.experience-inner {
     display: table-cell;
     vertical-align: middle;
 }
 
-.about-title {
+.experience-title {
     display: block;
     text-align: left;
     align-content: end;
@@ -20,49 +20,19 @@
     margin-bottom: 5%;
 }
 
-.about-content {
+.experience-content {
     display: block;
     text-align: left;
 }
 
-.about-content .col-lg-6 {
+.experience-content .col-lg-6 {
     margin: 40px 0;
     display: inline-block;
     vertical-align: top;
 }
 
-.about-content p {
+.experience-content p {
     margin: 0;
     padding: 0;
     font-size: 17px;
 }
-
-.skills {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.underline-animation {
-    color: #fdc96a;
-    cursor: pointer;
-    position: relative;
-    padding: 0.2em 0;
-}
-
-.underline-animation::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 0;
-    height: 2px;
-    background-color: #fdc96a;
-    transition: width 0.3s;
-}
-
-.underline-animation:hover::after {
-    width: 100%;
-}
-
-
-
