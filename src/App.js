@@ -1,12 +1,12 @@
-import './App.css';
 import Sidebar from "./components/Sidebar";
 import 'animate.css';
 import {useEffect, useState} from "react";
 import {Col, Row} from "react-bootstrap";
 import Home from "./components/Home";
 import About from "./components/About";
-import Skill from "./components/Skill";
 import Experience from "./components/Experience";
+import './App.css';
+import Projects from "./components/Projects";
 
 function App() {
     let [height, setHeight] = useState(window.innerHeight);
@@ -30,7 +30,8 @@ function App() {
                         <div className="content" style={{height: height, width: width * 0.84}}>
                             <Home height={height} width={width}/>
                             <About height={height} width={width}/>
-                            <Experience height={height}/>
+                            <Experience/>
+                            <Projects/>
                         </div>
                     </Col>
                 </Row>
@@ -40,6 +41,7 @@ function App() {
                     <div className="content" style={{height: height, width: width}}>
                         <Home height={height * 0.9} width={width}/>
                         <About height={height * 0.9} width={width}/>
+                        <Experience/>
                     </div>
                 </>
             )}

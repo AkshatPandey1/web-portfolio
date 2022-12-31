@@ -13,12 +13,6 @@ h1 {
     align-items: center;
     height: 100%;
 }
-
-.greeting .container-fluid {
-    animation: bounceInRight;
-    animation-duration: 2s;
-}
-
 .resume {
     margin-top: 5%;
     animation: swing;

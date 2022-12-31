@@ -6,7 +6,6 @@ function About(props) {
   return (
     <div className="about" id="about" style={{height: props.height}}>
       <div className="about-inner">
-
         <div className="about-title">
           <h1>About Me</h1>
         </div>
@@ -32,7 +31,7 @@ function About(props) {
                 , a startup founded in Toronto, Canada, and a Teacher's
                 Assistant for the programming methodology course
                 <span className="underline-animation cs201"
-                      onClick={() => window.open("https://apps.ualberta.ca/catalogue/course/cmput/201", "_blank")}> CMPT
+                      onClick={() => window.open("https://apps.ualberta.ca/catalogue/course/cmput/201", "_blank")}> CMPUT
                   201</span><> </>at the University of Alberta.
                 <br/><br/>
                 I am a highly enthusiastic and hardworking individual who is always seeking opportunities to learn and
@@ -43,20 +42,26 @@ function About(props) {
             <Col lg={6}>
               <h2>My Skills</h2>
               <div className="skills">
-                <Skill title="React" time="1 year"/>
+                <Skill title="Python" time="6 years"/>
+                <Skill title="C/C++" time="4 years"/>
+                <Skill title="HTML" time="4 years"/>
+                <Skill title="CSS" time="4 years"/>
+                <Skill title="JavaScript" time="4 years"/>
+                <Skill title="NumPy" time="3 years"/>
+                <Skill title="Git" time="3 years"/>
+                <Skill title="MySQL" time="3 years"/>
+                <Skill title="Node.js" time="2 years"/>
+                <Skill title="Express.js" time="2 years"/>
+                <Skill title="Flask" time="2 years"/>
+                <Skill title="Bootstrap" time="2 years"/>
+                <Skill title="React" time="2 years"/>
                 <Skill title="React Native" time="1 year"/>
-                <Skill title="Node.js" time="1 year"/>
+                <Skill title="Three.js" time="1 year"/>
+                <Skill title="PyTorch" time="1 year"/>
                 <Skill title="Java" time="1 year"/>
-                <Skill title="C++" time="1 year"/>
-                <Skill title="Python" time="1 year"/>
-                <Skill title="HTML" time="1 year"/>
-                <Skill title="CSS" time="1 year"/>
-                <Skill title="JavaScript" time="1 year"/>
-                <Skill title="Git" time="1 year"/>
+                <Skill title="C#" time="1 year"/>
                 <Skill title="MongoDB" time="1 year"/>
-                <Skill title="MySQL" time="1 year"/>
                 <Skill title="Firebase" time="1 year"/>
-                <Skill title="AWS" time="1 year"/>
               </div>
             </Col>
           </Row>
