@@ -60,37 +60,39 @@ function Experience() {
 
   return (
     <div className="experience" id="experience">
-      <div className="experience-title">
-        <h1>Experience</h1>
-      </div>
-      <div className="experience-timeline">
-        <div className="container">
-          <div className="main-timeline">
+      <div className="experience-inner">
+        <div className="experience-title">
+          <h1>Experience</h1>
+        </div>
+        <div className="experience-timeline">
+          <div className="container">
+            <div className="main-timeline">
 
 
-            {Object.keys(allExperience).map((key) => (
-              <div className="timeline">
-                <div className="icon"></div>
-                <div className="date-content">
-                  <div className="date-outer">
+              {Object.keys(allExperience).map((key) => (
+                <div className="timeline">
+                  <div className="icon"></div>
+                  <div className="date-content">
+                    <div className="date-outer">
                                     <span className="date">
                                             <span className="month">{allExperience[key].date}</span>
                                             <span className="year">{allExperience[key].length}</span>
                                     </span>
+                    </div>
                   </div>
-                </div>
-                <div className="timeline-content">
-                  <h5 className="title">{allExperience[key].position} <span
-                    className="company underline-animation"
-                    onClick={() => window.open(allExperience[key].link, "_blank")}>@{allExperience[key].company}</span>
-                  </h5>
-                  <ul className="description">
-                    {allExperience[key].description.map((item, index) => (
-                      <li key={index}>{item}</li>
-                    ))}
-                  </ul>
-                </div>
-              </div>))}
+                  <div className="timeline-content">
+                    <h5 className="title">{allExperience[key].position} <span
+                      className="company underline-animation"
+                      onClick={() => window.open(allExperience[key].link, "_blank")}>@{allExperience[key].company}</span>
+                    </h5>
+                    <ul className="description">
+                      {allExperience[key].description.map((item, index) => (
+                        <li key={index}>{item}</li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>))}
+            </div>
           </div>
         </div>
       </div>

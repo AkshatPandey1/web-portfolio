@@ -18,20 +18,17 @@ function About(props) {
                 using React, React Native, and various backend technologies. Some of my projects can be found in
                 the<> </>
                 <span
-                  className="underline-animation projects"
-                  onClick={() => {
-                    window.location.href = "#projects"
-                  }}>Projects</span> section of this website.
+                  className="underline-animation projects-title">Projects</span><> </>section of this website.
                 <br/><br/>
                 Currently, I am a student at the University of Alberta pursuing a degree in computer science. In
                 addition,
-                I am an intern software developer at
+                I am an intern software developer at<> </>
                 <span className="underline-animation amelia"
-                      onClick={() => window.open("https://getamelia.co/", "_blank")}> Amelia</span>
+                      onClick={() => window.open("https://getamelia.co/", "_blank")}>Amelia</span>
                 , a startup founded in Toronto, Canada, and a Teacher's
-                Assistant for the programming methodology course
+                Assistant for the programming methodology course<> </>
                 <span className="underline-animation cs201"
-                      onClick={() => window.open("https://apps.ualberta.ca/catalogue/course/cmput/201", "_blank")}> CMPUT
+                      onClick={() => window.open("https://apps.ualberta.ca/catalogue/course/cmput/201", "_blank")}>CMPUT
                   201</span><> </>at the University of Alberta.
                 <br/><br/>
                 I am a highly enthusiastic and hardworking individual who is always seeking opportunities to learn and
