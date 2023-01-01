@@ -45,6 +45,7 @@ function App() {
                         <About height={height * 0.9} width={width}/>
                         <Experience/>
                         <Projects/>
+                        <Contact/>
                     </div>
                 </>
             )}

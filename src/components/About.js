@@ -32,8 +32,9 @@ function About(props) {
                   201</span><> </>at the University of Alberta.
                 <br/><br/>
                 I am a highly enthusiastic and hardworking individual who is always seeking opportunities to learn and
-                improve my skills. If you have any inquiries or would like to collaborate, please do not hesitate to
-                contact me.
+                improve my skills. If you have any inquiries or would like to collaborate, please do not hesitate to<> </>
+                <span className="underline-animation contact-title"
+                      onClick={() => window.open("#contact", "_self")}>contact me</span>!
               </p>
             </Col>
             <Col lg={6}>
