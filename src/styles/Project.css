@@ -1,0 +1,110 @@
+.project {
+    position: relative;
+    width: 100%;
+    padding: 5% 5%;
+}
+
+.project .project-image img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.project .project-content {
+    padding: 10% 0;
+    position: relative;
+    left: -20%;
+    width: 120%;
+    z-index: 2;
+    text-align: end;
+}
+
+.project .project-content.right {
+    padding: 10% 0;
+    position: relative;
+    left: 0;
+    width: 120%;
+    z-index: 2;
+    text-align: start;
+}
+
+
+.project .project-content .project-title h1 {
+    font-size: 2rem;
+    font-family: "Calibre", sans-serif;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+.project .project-content .project-description {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    padding: 1rem 1rem;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+.project .project-content .project-description:hover {
+    box-shadow: 0 0 10px #6a6868;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.project .project-content .technology {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+    border-radius: 20px;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.project .project-content .technology:hover {
+    box-shadow: 0 0 10px #6a6868;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.project .project-content .project-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project .project-content .project-links .project-link {
+    margin: 0 1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #fff;
+}
+
+.project .project-content .project-links .project-link:hover {
+    color: #4fe315;
+}
+
+@media (max-width: 1100px) {
+
+    .project {
+        padding: 20% 5%;
+    }
+
+    .project .project-content {
+        width: 100%;
+        text-align: center;
+        left: 0;
+    }
+
+    .project .project-content.right {
+        width: 100%;
+        text-align: center;
+        left: 0;
+    }
+
+    .project .right-row {
+        flex-direction: column-reverse;
+    }
+}

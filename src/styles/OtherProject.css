@@ -1,0 +1,58 @@
+.other-project {
+    text-align: start;
+    height: 300px;
+}
+
+.other-project .other-project-title {
+    font-size: 1.5rem;
+    font-family: "Calibre", sans-serif;
+    font-weight: 700;
+    color: #fff;
+    height: 50px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+
+.other-project .other-project-description {
+    border-radius: 20px;
+    padding: 1rem 1rem;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #fff;
+    margin-bottom: 1rem;
+    height: 125px;
+}
+
+.other-project .other-project-technologies {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+    border-radius: 20px;
+    margin-bottom: 1rem;
+    text-align: center;
+    height: 50px;
+}
+
+.other-project .other-project-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+
+.other-project .other-project-links .other-project-link {
+    margin: 0 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    color: #fff;
+}
+
+@media (max-width: 1100px) {
+    .other-project {
+        text-align: center;
+        height: 300px;
+        padding: 0 40px;
+    }
+}

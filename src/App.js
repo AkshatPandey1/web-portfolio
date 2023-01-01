@@ -7,6 +7,7 @@ import About from "./components/About";
 import Experience from "./components/Experience";
 import './App.css';
 import Projects from "./components/Projects";
+import Contact from "./components/Contact";
 
 function App() {
     let [height, setHeight] = useState(window.innerHeight);
@@ -32,6 +33,7 @@ function App() {
                             <About height={height} width={width}/>
                             <Experience/>
                             <Projects/>
+                            <Contact/>
                         </div>
                     </Col>
                 </Row>
@@ -42,6 +44,7 @@ function App() {
                         <Home height={height * 0.9} width={width}/>
                         <About height={height * 0.9} width={width}/>
                         <Experience/>
+                        <Projects/>
                     </div>
                 </>
             )}

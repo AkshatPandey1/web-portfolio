@@ -1,0 +1,50 @@
+.contact {
+    height: 98vh;
+    width: 100%;
+    padding: 0 20%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact .contact-title h1 {
+    font-size: 2.5rem;
+    font-family: "Calibre", sans-serif;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 2rem;
+}
+
+.contact .contact-description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact .contact-description p {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+.contact .mail-button button {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #fff;
+    border-radius: 20px;
+    margin-bottom: 1rem;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    border: none;
+    padding: 1rem 2rem;
+    cursor: pointer;
+}
+
+.contact .mail-button button:hover {
+    box-shadow: 0 0 10px #6a6868;
+    background-color: rgba(0, 0, 0, 0.5);
+}

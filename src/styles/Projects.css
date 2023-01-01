@@ -2,10 +2,39 @@
     height: 100%;
     width: 100%;
     display: table;
+    margin: 7% 0;
 }
 
 .projects-inner {
     display: table-cell;
     vertical-align: middle;
     text-align: center;
+}
+
+.projects .projects-inner .projects-title {
+    font-size: 2rem;
+    font-family: "Calibre", sans-serif;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 2rem;
+}
+
+.projects .projects-content h2 {
+    font-size: 2rem;
+    font-family: "Calibre", sans-serif;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+.projects .other-projects {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+.projects .other-projects h2 {
+    margin: 3rem 0;
 }
