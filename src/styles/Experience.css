@@ -212,7 +212,7 @@
         font-size: 17px
     }
     .main-timeline .timeline:nth-child(2n) .timeline-content {
-        padding: 10px 30px 10px 0
+        padding: 10px 30px 10px 0;
     }
 }
 
@@ -260,8 +260,12 @@
         padding: 10px 0
     }
 
+    .main-timeline .timeline-content .title {
+        text-align: center;
+    }
+
     .main-timeline .timeline:nth-child(2n) .timeline-content .description {
-        text-align: left;
+        text-align: center;
     }
 
     .main-timeline .title {
