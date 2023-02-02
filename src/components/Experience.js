@@ -6,7 +6,7 @@ function Experience() {
     "Koalacademy": {
       position: "Frontend Developer",
       company: "Koalacademy",
-      date: "Sept 2021",
+      date: "Jan 2022",
       length: "Present",
       description: [
         "Creating the web application to perform the test on the user",
