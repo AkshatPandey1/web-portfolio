@@ -3,6 +3,18 @@ import "../styles/Experience.css";
 function Experience() {
 
   const allExperience = {
+    "Koalacademy": {
+      position: "Frontend Developer",
+      company: "Koalacademy",
+      date: "Sept 2021",
+      length: "Present",
+      description: [
+        "Creating the web application to perform the test on the user",
+        "Handling connecting the OpenBCI EEG headset to the web application and parsing brain data",
+        "Updating the firebase database with the data to be later used by machine learning models",
+      ],
+      link: "https://neuralberta.tech/project/koalacademy/"
+    },
     "University of Alberta": {
       position: "Teaching Assistant",
       company: "University of Alberta",
@@ -20,7 +32,7 @@ function Experience() {
       position: "Software Engineer Intern",
       company: "Amelia",
       date: "Sept 2022",
-      length: "Present",
+      length: "Jan 2023",
       description: [
         "Developed and implemented new features in React Native iOS app",
         "Resolved design issues and errors to improve user experience",
