@@ -3,11 +3,23 @@ import "../styles/Experience.css";
 function Experience() {
 
   const allExperience = {
+    "BBInsight": {
+      position: "Intern Developer",
+      company: "BBInsight",
+      date: "July 2023",
+      length: "Present",
+      description: [
+        "Developed data workflows using AWS Glue and performed column validation",
+        "Documented business requirements and managed data updates using SQL in Postgres",
+        "Collaborated on creating new attributes for TransUnion, used in characteristic algorithms and metadata services",
+      ],
+      link: "https://bbinsight.com/"
+    },
     "Koalacademy": {
       position: "Frontend Developer",
       company: "Koalacademy",
-      date: "Jan 2022",
-      length: "Present",
+      date: "Jan 2023",
+      length: "April 2023",
       description: [
         "Creating the web application to perform the test on the user",
         "Handling connecting the OpenBCI EEG headset to the web application and parsing brain data",
@@ -19,7 +31,7 @@ function Experience() {
       position: "Teaching Assistant",
       company: "University of Alberta",
       date: "Jan 2023",
-      length: "Present",
+      length: "April 2023",
       description: [
         "Hold weekly office hours to assist students with course material",
         "Grade assignments and exams",

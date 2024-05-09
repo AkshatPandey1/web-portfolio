@@ -6,13 +6,13 @@ import {Row} from "react-bootstrap";
 function Projects(props) {
 
   const featuredProjects = {
-    "Portfolio": {
-      "title": "Portfolio",
-      "description": "Web developer portfolio built with React, Bootstrap, and Animate CSS. Features info about skills, experience, projects, and a contact form. User-friendly and visually appealing.",
-      "image": "https://i.imgur.com/LmZP52L.png",
-      "link": "http://localhost:3000/web-portfolio",
-      "github": "https://github.com/AkshatPandey1/web-portfolio",
-      "technologies": ["React", "React Bootstrap", "Animate CSS", "Github Pages"],
+    "BiggerYoshi": {
+      "title": "Bigger Yoshi",
+      "description": "Social Media Application that allows users to post, like, comment, and follow other users. Features include user authentication, profile customization, post creation, and a feed",
+      "image": "https://i.imgur.com/mkegs4w.png",
+      "link": "https://youtu.be/23BgRLu7Y1s",
+      "github": "https://github.com/CMPUT404W23-bigger-yoshi/CMPUT404-project-socialdistribution/",
+      "technologies": ["Flask", "React", "SQLAlchemy", "PostgreSQL", "Figma", "Heroku", "OAuth"],
       "orientation": "left"
     },
     "Music for Mood": {

@@ -22,14 +22,11 @@ function About(props) {
                 <br/><br/>
                 Currently, I am a student at the University of Alberta pursuing a degree in computer science. In
                 addition,
-                I am an intern software developer at<> </>
+                I am an intern developer at<> </>
                 <span className="underline-animation amelia"
-                      onClick={() => window.open("https://getamelia.co/", "_blank")}>Amelia</span>
-                , a startup founded in Toronto, Canada, and a Teacher's
-                Assistant for the programming methodology course<> </>
-                <span className="underline-animation cs201"
-                      onClick={() => window.open("https://apps.ualberta.ca/catalogue/course/cmput/201", "_blank")}>CMPUT
-                  201</span><> </>at the University of Alberta.
+                      onClick={() => window.open("https://getamelia.co/", "_blank")}>BBInsight</span>
+                , a company based in Rolling Meadows, Illinois 
+                <> </>
                 <br/><br/>
                 I am a highly enthusiastic and hardworking individual who is always seeking opportunities to learn and
                 improve my skills. If you have any inquiries or would like to collaborate, please do not hesitate to<> </>
@@ -40,26 +37,29 @@ function About(props) {
             <Col lg={6}>
               <h2>My Skills</h2>
               <div className="skills">
-                <Skill title="Python" time="6 years"/>
-                <Skill title="C/C++" time="4 years"/>
-                <Skill title="HTML" time="4 years"/>
-                <Skill title="CSS" time="4 years"/>
-                <Skill title="JavaScript" time="4 years"/>
+                <Skill title="Python" time="8 years"/>
+                <Skill title="C/C++" time="5 years"/>
+                <Skill title="HTML" time="5 years"/>
+                <Skill title="CSS" time="5 years"/>
+                <Skill title="JavaScript" time="5 years"/>
                 <Skill title="NumPy" time="3 years"/>
-                <Skill title="Git" time="3 years"/>
-                <Skill title="MySQL" time="3 years"/>
-                <Skill title="Node.js" time="2 years"/>
-                <Skill title="Express.js" time="2 years"/>
+                <Skill title="Git" time="4 years"/>
+                <Skill title="MySQL" time="4 years"/>
+                <Skill title="Node.js" time="3 years"/>
+                <Skill title="Express.js" time="3 years"/>
                 <Skill title="Flask" time="2 years"/>
-                <Skill title="Bootstrap" time="2 years"/>
-                <Skill title="React" time="2 years"/>
-                <Skill title="React Native" time="1 year"/>
-                <Skill title="Three.js" time="1 year"/>
-                <Skill title="PyTorch" time="1 year"/>
-                <Skill title="Java" time="1 year"/>
-                <Skill title="C#" time="1 year"/>
-                <Skill title="MongoDB" time="1 year"/>
-                <Skill title="Firebase" time="1 year"/>
+                <Skill title="Bootstrap" time="3 years"/>
+                <Skill title="React" time="3 years"/>
+                <Skill title="React Native" time="2 years"/>
+                <Skill title="Three.js" time="2 years"/>
+                <Skill title="PyTorch" time="2 years"/>
+                <Skill title="Java" time="2 years"/>
+                <Skill title="C#" time="2 years"/>
+                <Skill title="MongoDB" time="2 years"/>
+                <Skill title="Firebase" time="2 years"/>
+                <Skill title="Ruby" time="<1 year"/>
+                <Skill title="AWS" time="1 year"/>
+                <Skill title="gRPC" time="<1 year"/>
               </div>
             </Col>
           </Row>

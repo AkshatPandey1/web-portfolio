@@ -62,7 +62,7 @@ function Home(props) {
                             <Row>
                                 <div className="resume">
                                     <Button
-                                      href="https://drive.google.com/file/d/10F_ZVe3FHzUSRf5msKWDT0Ke3wNmFyep/preview"
+                                      href="https://drive.google.com/file/d/1REee-goy-slFbXuV3sq4S7wZWLZcBJvd/preview"
                                       variant="outline-success"
                                       
                                     >Resume</Button>
