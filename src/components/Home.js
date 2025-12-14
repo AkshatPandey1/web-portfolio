@@ -57,7 +57,7 @@ function Home(props) {
                                 <h1>Akshat Pandey</h1>
                             </Row>
                             <Row>
-                                <h3>Software Developer</h3>
+                                <h3>MSc Cybersecurity @ TU/e</h3>
                             </Row>
                             <Row>
                                 <div className="resume">

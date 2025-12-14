@@ -3,15 +3,15 @@ import "../styles/Experience.css";
 function Experience() {
 
   const allExperience = {
-    "BBInsight": {
-      position: "Intern Developer",
-      company: "BBInsight",
-      date: "July 2023",
-      length: "Present",
+    "Blackbuck Insights": {
+      position: "DevOps Engineer",
+      company: "Blackbuck Insights",
+      date: "June 2023",
+      length: "July 2024",
       description: [
-        "Developed data workflows using AWS Glue and performed column validation",
-        "Documented business requirements and managed data updates using SQL in Postgres",
-        "Collaborated on creating new attributes for TransUnion, used in characteristic algorithms and metadata services",
+        "Architected 7 ETL pipelines using AWS Glue/S3, achieving 100% data validation accuracy",
+        "Optimized PostgreSQL queries to eliminate processing errors in high-volume TransUnion data",
+        "Integrated CI/CD workflows in GitLab, reducing deployment times and ensuring version control integrity",
       ],
       link: "https://bbinsight.com/"
     },
@@ -21,35 +21,31 @@ function Experience() {
       date: "Jan 2023",
       length: "April 2023",
       description: [
-        "Creating the web application to perform the test on the user",
-        "Handling connecting the OpenBCI EEG headset to the web application and parsing brain data",
-        "Updating the firebase database with the data to be later used by machine learning models",
+        "Implemented real-time data handling using Firebase for a BCI-optimized learning platform",
+        "Collaborated on processing EEG signals (OpenBCI) to visualize user retention and study confidence",
+        "Built a responsive React.js interface for real-time neurofeedback",
       ],
       link: "https://neuralberta.tech/project/koalacademy/"
     },
     "University of Alberta": {
-      position: "Teaching Assistant",
+      position: "Teaching Assistant (C, Unix)", // SPECIFIC TITLE
       company: "University of Alberta",
       date: "Jan 2023",
       length: "April 2023",
       description: [
-        "Hold weekly office hours to assist students with course material",
-        "Grade assignments and exams",
-        "Provide feedback to students on their assignments and exams",
-        "Assist in the development of course material",
+        "Mentored 40+ students in low-level C programming, memory management, and Unix tools",
+        "Graded 70+ assignments weekly, providing technical feedback on code efficiency",
       ],
       link: "https://apps.ualberta.ca/catalogue/course/cmput/201"
     },
     Amelia: {
-      position: "Software Engineer Intern",
+      position: "React Native Developer",
       company: "Amelia",
       date: "Sept 2022",
       length: "Jan 2023",
       description: [
-        "Developed and implemented new features in React Native iOS app",
-        "Resolved design issues and errors to improve user experience",
-        "Contributed to the overall performance and stability of the app",
-        "Collaborated with cross-functional team to ensure successful feature launches",
+        "Implemented secure AWS backend connections for authentication and storage",
+        "Diagnosed and fixed critical performance bugs and UI inconsistencies across iOS/Android",
       ],
       link: "https://getamelia.co/"
     },

@@ -14,7 +14,7 @@ function Contact() {
         </p>
       </div>
       <div className="mail-button">
-        <Button variant="outline-light" onClick={() => window.open("mailto:apandey3@ualberta.ca", "_blank")}>Say
+        <Button variant="outline-light" onClick={() => window.open("mailto:akshatpandeymyself@gmail.com", "_blank")}>Say
           Hi!</Button>
       </div>
     </div>
