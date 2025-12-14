@@ -1,70 +1,102 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<div align="left">
+<h1>WEB-PORTFOLIO</h1>
+<p><em>Showcase Your Brilliance, Inspire the World</em></p>
 
-## Available Scripts
+<img alt="last-commit" src="https://img.shields.io/github/last-commit/AkshatPandey1/web-portfolio?style=flat&logo=git&logoColor=white&color=0080ff" style="margin: 0px 2px; display: inline-block;">
+<img alt="repo-top-language" src="https://img.shields.io/github/languages/top/AkshatPandey1/web-portfolio?style=flat&color=0080ff" style="margin: 0px 2px; display: inline-block;">
+<img alt="repo-language-count" src="https://img.shields.io/github/languages/count/AkshatPandey1/web-portfolio?style=flat&color=0080ff" style="margin: 0px 2px; display: inline-block;">
 
-In the project directory, you can run:
+<p><em>Built with the tools and technologies:</em></p>
 
-### `npm start`
+<img alt="JSON" src="https://img.shields.io/badge/JSON-000000.svg?style=flat&logo=JSON&logoColor=white" style="margin: 0px 2px; display: inline-block;">
+<img alt="Markdown" src="https://img.shields.io/badge/Markdown-000000.svg?style=flat&logo=Markdown&logoColor=white" style="margin: 0px 2px; display: inline-block;">
+<img alt="npm" src="https://img.shields.io/badge/npm-CB3837.svg?style=flat&logo=npm&logoColor=white" style="margin: 0px 2px; display: inline-block;">
+<img alt="JavaScript" src="https://img.shields.io/badge/JavaScript-F7DF1E.svg?style=flat&logo=JavaScript&logoColor=black" style="margin: 0px 2px; display: inline-block;">
+<img alt="React Bootstrap" src="https://img.shields.io/badge/React%20Bootstrap-41E0FD.svg?style=flat&logo=React-Bootstrap&logoColor=black" style="margin: 0px 2px; display: inline-block;">
+<img alt="React" src="https://img.shields.io/badge/React-61DAFB.svg?style=flat&logo=React&logoColor=black" style="margin: 0px 2px; display: inline-block;">
+<img alt="GitHub Actions" src="https://img.shields.io/badge/GitHub%20Actions-2088FF.svg?style=flat&logo=GitHub-Actions&logoColor=white" style="margin: 0px 2px; display: inline-block;">
+<img alt="Bootstrap" src="https://img.shields.io/badge/Bootstrap-7952B3.svg?style=flat&logo=Bootstrap&logoColor=white" style="margin: 0px 2px; display: inline-block;">
+</div>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<br>
+<hr>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<h2>Table of Contents</h2>
 
-### `npm test`
+- [Overview](#overview)
+- [Getting Started](#getting-started)
+    - [Prerequisites](#prerequisites)
+    - [Installation](#installation)
+    - [Usage](#usage)
+    - [Testing](#testing)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<hr>
 
-### `npm run build`
+<h2>Overview</h2>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+This is literally just the source code for my personal website. I built it to have a central place to dump my projects, show off my skills, and hopefully convince people I'm good at what I do. It’s built on React because, well, that's what I enjoy using.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+**Why I built it this way:**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+I didn't want a messy repo, and I definitely didn't want to manually upload files every time I fixed a typo. Here’s the logic behind the build:
 
-### `npm run eject`
+* 🛠️ **Lazy Deployment:** I set up a CI/CD pipeline to GitHub Pages. Basically, I push the code, and the internet updates itself.
+* 🎨 **Fits on Your Phone:** I spent time making sure the CSS doesn't break on mobile screens. It looks decent on any device.
+* 🔧 **Clean Code:** I hate spaghetti code, so I broke everything down into reusable components (like Skills, Projects, and Timeline). It makes updating things way easier.
+* 🚀 **Easy to Run:** I kept the setup simple so I (or you) don't need a PhD to get it running locally.
+* 💻 **Just React:** No weird proprietary stuff. Just standard React best practices so it runs smooth and fast.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+***
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<h2>Getting Started</h2>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+<h3>Prerequisites</h3>
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+This project requires the following dependencies:
 
-## Learn More
+- **Programming Language:** JavaScript
+- **Package Manager:** Npm
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+<h3>Installation</h3>
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Build web-portfolio from the source and install dependencies:
 
-### Code Splitting
+1. **Clone the repository:**
+   ```
+   ❯ git clone [https://github.com/AkshatPandey1/web-portfolio](https://github.com/AkshatPandey1/web-portfolio)
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+2.  **Navigate to the project directory:**
 
-### Analyzing the Bundle Size
+    ```sh
+    ❯ cd web-portfolio
+    ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+3.  **Install the dependencies:**
 
-### Making a Progressive Web App
+    **Using [npm](https://www.npmjs.com/):**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+    ```sh
+    ❯ npm install
+    ```
 
-### Advanced Configuration
+### Usage
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Run the project with:
 
-### Deployment
+**Using [npm](https://www.npmjs.com/):**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+```sh
+npm start
+```
 
-### `npm run build` fails to minify
+### Testing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Web-portfolio uses the {**test\_framework**} test framework. Run the test suite with:
+
+**Using [npm](https://www.npmjs.com/):**
+
+```sh
+npm test
+```
