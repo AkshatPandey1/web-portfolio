@@ -48,7 +48,7 @@ function Sidebar(props) {
                                         </a>
                                     </Col>
                                     <Col>
-                                        <a href="mailto:akshatpandeymyself@gmail.com">
+                                        <a href="mailto:ap2cyber@proton.me">
                                             <EnvelopeFill className="icon" size={20}/>
                                         </a>
                                     </Col>
@@ -87,7 +87,7 @@ function Sidebar(props) {
                                             </a>
                                         </Col>
                                         <Col>
-                                            <a href="mailto:akshatpandeymyself@gmail.com">
+                                            <a href="mailto:ap2cyber@proton.me">
                                                 <EnvelopeFill className="icon" size={30}/>
                                             </a>
                                         </Col>
